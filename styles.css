@@ -1,0 +1,202 @@
+/* Reset and general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Background image with blur for frosted glass effect */
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('spotify.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 340px;
+    padding: 20px;
+    background-color: rgba(26, 26, 26, 0.9); /* Semi-transparent black for frosted glass effect */
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+  }
+  
+  .image-section {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .cover-image {
+    width: 100%;
+    display: block;
+  }
+  
+  .text-section h1 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #ddd;
+    font-weight: 400;
+  }
+  
+  .spotify-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1db954;
+    color: #fff;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .spotify-button:hover {
+    background-color: #17a148;
+    transform: scale(1.05); /* Adds zoom effect on hover */
+  }
+  
+  .spotify-icon {
+    font-size: 1.5rem;
+    margin-right: 8px;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .privacy-text {
+    font-size: 0.7rem;
+    color: #aaa;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .privacy-button {
+    background-color: rgba(50, 50, 50, 0.2);
+    border: none;
+    color: #ccc;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 15px;
+  }
+  
+  .privacy-button:hover {
+    background-color: rgba(60, 60, 60, 0.3);
+    transform: scale(1.05); /* Adds zoom effect on hover */
+  }
+  
+  .powered-by {
+    background-color: rgba(50, 50, 50, 0.3);
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    color: #ccc;
+    font-weight: bold;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: fit-content;
+    margin: 5px auto;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .powered-by:hover {
+    transform: scale(1.05); /* Adds zoom effect on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .text-section h1 {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+  
+    .spotify-button {
+      width: 90%;
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .privacy-text {
+      font-size: 0.65rem;
+    }
+  
+    .privacy-button {
+      padding: 5px 12px;
+      font-size: 0.75rem;
+    }
+  
+    .powered-by {
+      padding: 3px 8px;
+      font-size: 0.65rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      max-width: 95%;
+      padding: 10px;
+    }
+  
+    .text-section h1 {
+      font-size: 1rem;
+    }
+  
+    .spotify-button {
+      width: 100%;
+      padding: 6px 18px;
+      font-size: 0.85rem;
+    }
+  
+    .privacy-text {
+      font-size: 0.6rem;
+    }
+  
+    .privacy-button {
+      padding: 4px 10px;
+      font-size: 0.7rem;
+    }
+  
+    .powered-by {
+      padding: 3px 7px;
+      font-size: 0.6rem;
+    }
+  }
+  
